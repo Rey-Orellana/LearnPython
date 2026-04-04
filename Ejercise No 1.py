@@ -31,3 +31,11 @@ print(type(nombre))
 print(type(estatura))
 print(type(sexo))
 print(type(estudiante))
+
+
+
+#Covnertir en pytho a tipos de datos
+
+edad = 21
+
+print(edad)
