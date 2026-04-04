@@ -1,55 +1,10 @@
-##Comentarios en Python
-#en Python se imprimero con la fguncion Print
-print("Me gusta la pizza..!!!")
+#Entradas por computadora
 
+nombre = input("Ingresa tu nombre: ")
 
-##Variables en Python
+print(f"Hola {nombre}")
 
+edad = input(f"Ingresa tu edad {nombre} : ")
 
-nombre = "Rey"
-
-apellido = "Orellana"
-estatura = 1.80
-
-sexo = 'M'
-
-estudiante = False
-
-valor = ""
-if(estudiante):
-    valor = " estudiante"
-else:
-    valor = " pandillero"
-
-print(f"Hola como estas {nombre} {apellido} eres {valor} eres de sexo {sexo} y mides {estatura}")
-
-
-
-#Como ver los tipos de datos de las variables
-
-print(type(nombre))
-print(type(estatura))
-print(type(sexo))
-print(type(estudiante))
-
-
-
-#Covnertir en pytho a tipos de datos
-
-edad = 21
-
-print(edad)
-
-Precio = "12.5"
-
-edad = float(edad)
-print(type(edad))
-
-#Convertir de String a entero
-
-print(type(Precio))
-
-Precio = float(Precio)
-
-print(Precio)
-print(type(Precio))
+edad = int(edad)
+print(f" entendido {nombre} tienes {edad} años")
