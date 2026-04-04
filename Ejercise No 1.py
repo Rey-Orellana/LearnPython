@@ -9,7 +9,7 @@ print("Me gusta la pizza..!!!")
 nombre = "Rey"
 
 apellido = "Orellana"
-estatura = 1,80
+estatura = 1.80
 
 sexo = 'M'
 
@@ -22,3 +22,12 @@ else:
     valor = " pandillero"
 
 print(f"Hola como estas {nombre} {apellido} eres {valor} eres de sexo {sexo} y mides {estatura}")
+
+
+
+#Como ver los tipos de datos de las variables
+
+print(type(nombre))
+print(type(estatura))
+print(type(sexo))
+print(type(estudiante))
