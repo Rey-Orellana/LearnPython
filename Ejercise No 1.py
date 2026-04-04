@@ -1,10 +1,10 @@
-#Como encontrar el area de un rectangulo
+#Haciendo un carrito de compras en Python
 
-#Para hallar el area de un rectangulo se calcula b por altura
-base = float(input("Ingresa la base de un reactangulo: "))
-altura = float(input("Ingresa la altura del rectangulo: "))
+item = input("Ingresa el producto que deseas adquirir: ")
+precio = float(input(f"Cuanto es el precio del {item}: "))
+cantidad = int(input(f"cual es la cantidad {item}: "))
 
-operacion = base*altura
+operacionCarrito = float(cantidad*precio)
 
-print(f"El area con datos de {base} * {altura} es de: {operacion}")
-
+print(f"El total de {item}s es de {cantidad} por precio de unidad {precio}")
+print(f"El total es de {round(operacionCarrito,2)}")
