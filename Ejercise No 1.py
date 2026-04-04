@@ -1,10 +1,10 @@
-#Entradas por computadora
+#Como encontrar el area de un rectangulo
 
-nombre = input("Ingresa tu nombre: ")
+#Para hallar el area de un rectangulo se calcula b por altura
+base = float(input("Ingresa la base de un reactangulo: "))
+altura = float(input("Ingresa la altura del rectangulo: "))
 
-print(f"Hola {nombre}")
+operacion = base*altura
 
-edad = input(f"Ingresa tu edad {nombre} : ")
+print(f"El area con datos de {base} * {altura} es de: {operacion}")
 
-edad = int(edad)
-print(f" entendido {nombre} tienes {edad} años")
