@@ -39,3 +39,17 @@ print(type(estudiante))
 edad = 21
 
 print(edad)
+
+Precio = "12.5"
+
+edad = float(edad)
+print(type(edad))
+
+#Convertir de String a entero
+
+print(type(Precio))
+
+Precio = float(Precio)
+
+print(Precio)
+print(type(Precio))
