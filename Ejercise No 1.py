@@ -9,3 +9,9 @@ print(numeros[0:3])
 numeros[0]=0
 
 print(numeros)
+#Aprendiendo a usar tuplas 
+print(type(numeros))
+
+abecedario = ("a","b","c","d")
+
+print(type(abecedario))
