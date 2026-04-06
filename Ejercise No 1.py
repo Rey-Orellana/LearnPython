@@ -16,18 +16,10 @@ print(l)
 lista1 = ["uno","dos","tres"]
 lista2 = ["cuatro","cinco","seis"]
 
+
 lista1.extend(lista2)
 
 print(lista1)
 
-#Eliminar elementos en una lista
-
-lista1.pop(0)
-
+lista1.clear()
 print(lista1)
-
-
-listaPrueba = [1,2,2,3,4,5,]
-print(listaPrueba)
-listaPrueba.remove(2)
-print(listaPrueba)
