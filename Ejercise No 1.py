@@ -1,17 +1,7 @@
-##Aprendiendo listas en Python
+#Listas y metodos en Python
 
-numeros = [1,2,3,4,5]
+l = [1,2,3,4,5,6]
 
-print(numeros[0:3])
+l.append(7)
 
-#Aprendiendo listas en Python
-
-numeros[0]=0
-
-print(numeros)
-#Aprendiendo a usar tuplas 
-print(type(numeros))
-
-abecedario = ("a","b","c","d")
-
-print(type(abecedario))
+print(l)
