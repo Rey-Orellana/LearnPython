@@ -19,3 +19,9 @@ lista2 = ["cuatro","cinco","seis"]
 lista1.extend(lista2)
 
 print(lista1)
+
+#Eliminar elementos en una lista
+
+lista1.pop(0)
+
+print(lista1)
