@@ -25,3 +25,9 @@ print(lista1)
 lista1.pop(0)
 
 print(lista1)
+
+
+listaPrueba = [1,2,2,3,4,5,]
+print(listaPrueba)
+listaPrueba.remove(2)
+print(listaPrueba)
