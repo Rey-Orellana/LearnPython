@@ -10,3 +10,12 @@ print(l)
 
 l.insert(0,0)
 print(l)
+
+#Unir dos listas con extend
+
+lista1 = ["uno","dos","tres"]
+lista2 = ["cuatro","cinco","seis"]
+
+lista1.extend(lista2)
+
+print(lista1)
