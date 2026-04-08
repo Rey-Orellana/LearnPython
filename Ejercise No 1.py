@@ -1,25 +1,12 @@
-#Listas y metodos en Python
+#Carrito de compras
 
-l = [1,2,3,4,5,6]
+item = input("Ingresa el nombre del producto: ")
 
-l.append(7)
+precio = float(input(f"Ingresa el precio del producto {item}: "))
 
-print(l)
-
-#Metodo para agregar de acuerdo a un indice con insert
-
-l.insert(0,0)
-print(l)
-
-#Unir dos listas con extend
-
-lista1 = ["uno","dos","tres"]
-lista2 = ["cuatro","cinco","seis"]
+cantidad = int(input(f"Ingresa la cantidad del prodcuto {item}: "))
 
 
-lista1.extend(lista2)
+total =precio*cantidad
 
-print(lista1)
-
-lista1.clear()
-print(lista1)
+print(f"El total a cancelar es de {total} por {cantidad} de {item}")
