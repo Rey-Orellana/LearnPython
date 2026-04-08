@@ -1,12 +1,24 @@
-#Carrito de compras
+#recorriendo una list
 
-item = input("Ingresa el nombre del producto: ")
+l = [1,2,3,4,5,6]
 
-precio = float(input(f"Ingresa el precio del producto {item}: "))
-
-cantidad = int(input(f"Ingresa la cantidad del prodcuto {item}: "))
+print(l[0:6:3])
 
 
-total =precio*cantidad
+#Colecciones en python
 
-print(f"El total a cancelar es de {total} por {cantidad} de {item}")
+
+l = [1,2,3,4,5,6]
+
+print(l[0:6:3])
+
+tuplas = (2,4,6,7,8)
+
+print(tuplas[0:5:2])
+
+"""
+Varios
+comentarios
+multilia
+we
+"""
