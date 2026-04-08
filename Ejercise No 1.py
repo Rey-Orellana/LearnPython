@@ -16,9 +16,13 @@ tuplas = (2,4,6,7,8)
 
 print(tuplas[0:5:2])
 
-"""
-Varios
-comentarios
-multilia
-we
-"""
+diccionario = {
+    "nombre":"Iron Man",
+    "apellido":"Stark",
+    "edad":24,
+    "mayor":True
+}
+
+
+print(diccionario)
+print(diccionario["apellido"])
