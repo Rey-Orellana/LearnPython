@@ -6,3 +6,7 @@ diccionario = {
     "edad":17,
     "mayor_de_edad": False
 }
+
+print(diccionario)
+
+print(diccionario["edad"])
