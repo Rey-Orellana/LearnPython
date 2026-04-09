@@ -10,3 +10,11 @@ diccionario = {
 print(diccionario)
 
 print(diccionario["edad"])
+
+##Istancia en Python
+
+boleanito = "Choco"
+
+
+
+print(isinstance(boleanito,bool))
