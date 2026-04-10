@@ -1,7 +1,8 @@
-#Aprendiendo If else en python
-a = 33
-b = 33
-if b > a:
-  print("b is greater than a")
-elif a == b:
-  print("a and b are equal")
+luz = "amarillo"
+
+if luz == "verde":
+    print("¡Pasa!")
+elif luz == "amarillo":
+    print("¡Acelera o frena rápido!") # Esto es el elif
+else:
+    print("¡Detente!") # Esto es el else (si no es verde ni amarillo, es rojo)
