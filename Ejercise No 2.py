@@ -1,8 +1,9 @@
-#Haciendo cosas en Python
+#Aprendiendo If else en python
 
-edad = 17
+a = 33
+b = 200
 
-if edad >=18:
-    print("Eres mayor de edad we ")
+if a > b :
+    print(f"the variable {a} is more that {b}")
 else:
-    print("Eres un Llokalla")
+    print(f"the variable {b} is more tht {a}")
