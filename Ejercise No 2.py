@@ -1,8 +1,12 @@
-luz = "amarillo"
+score = 75
 
-if luz == "verde":
-    print("¡Pasa!")
-elif luz == "amarillo":
-    print("¡Acelera o frena rápido!") # Esto es el elif
+if score >= 90:
+  print("Grade: A")
+elif score >= 80:
+  print("Grade: B")
+elif score >= 70:
+  print("Grade: C")
+elif score >= 60:
+  print("Grade: D")
 else:
-    print("¡Detente!") # Esto es el else (si no es verde ni amarillo, es rojo)
+  print("El score no existe chaval")
