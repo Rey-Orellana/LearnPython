@@ -1,34 +1,37 @@
-# DICCIONARIO: Colección no ordenada de pares clave: valor
-# Las claves son únicas y permiten búsqueda rápida
+# CONJUNTO: Colección no ordenada de elementos únicos (sin repetidos)
+# Útil para eliminar duplicados y operaciones de teoría de conjuntos
 
-# Crear un diccionario de estudiantes y sus notas
-estudiantes = {
-    "Ana": 8.5,
-    "Luis": 7.0,
-    "Carlos": 9.2
-}
+# Crear un conjunto con números (los repetidos se eliminan automáticamente)
+numeros = {1, 2, 3, 2, 4, 3, 5}
+print(numeros)  # {1, 2, 3, 4, 5} - los duplicados desaparecieron
 
-# Acceder a un valor por su clave
-print(estudiantes["Ana"])  # Muestra 8.5
-print(estudiantes.get("Luis"))  # Muestra 7.0
+# Agregar elementos
+numeros.add(6)
+numeros.add(3)  # No hace nada porque 3 ya existe
+print(numeros)  # {1, 2, 3, 4, 5, 6}
 
-# Agregar o modificar un par
-estudiantes["Diana"] = 9.8  # Agrega nueva estudiante
-estudiantes["Luis"] = 7.5   # Modifica nota de Luis
+# Eliminar un elemento (si no existe da error)
+numeros.remove(4)
 
-# Verificar si una clave existe
-if "Carlos" in estudiantes:
-    print("Carlos está en el curso")
+# Eliminar sin error si no existe
+numeros.discard(10)  # No pasa nada
 
-# Eliminar un par por su clave
-del estudiantes["Ana"]
+# Unión de conjuntos (todos los elementos de ambos)
+a = {1, 2, 3}
+b = {3, 4, 5}
+union = a | b  # o a.union(b)
+print("Unión:", union)  # {1, 2, 3, 4, 5}
 
-# Recorrer claves y valores
-for nombre, nota in estudiantes.items():
-    print(f"{nombre} sacó {nota}")
+# Intersección (elementos que están en ambos)
+interseccion = a & b  # o a.intersection(b)
+print("Intersección:", interseccion)  # {3}
 
-# Obtener solo las claves
-print(estudiantes.keys())   # dict_keys(['Luis', 'Carlos', 'Diana'])
+# Diferencia (elementos de a que no están en b)
+diferencia = a - b  # o a.difference(b)
+print("Diferencia (a - b):", diferencia)  # {1, 2}
 
-# Obtener solo los valores
-print(estudiantes.values()) # dict_values([7.5, 9.2, 9.8])
+# Convertir una lista con duplicados a conjunto (para limpiar)
+lista_con_repetidos = [1, 2, 2, 3, 3, 3, 4]
+sin_repetidos = set(lista_con_repetidos)
+print("Lista original:", lista_con_repetidos)
+print("Sin repetidos:", sin_repetidos)  # {1, 2, 3, 4}
