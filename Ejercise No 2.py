@@ -1,25 +1,34 @@
-# COLA: El primer elemento que entra es el primero en salir
-# Ejemplo real: fila del supermercado
+# DICCIONARIO: Colección no ordenada de pares clave: valor
+# Las claves son únicas y permiten búsqueda rápida
 
-from collections import deque
+# Crear un diccionario de estudiantes y sus notas
+estudiantes = {
+    "Ana": 8.5,
+    "Luis": 7.0,
+    "Carlos": 9.2
+}
 
-cola = deque()
+# Acceder a un valor por su clave
+print(estudiantes["Ana"])  # Muestra 8.5
+print(estudiantes.get("Luis"))  # Muestra 7.0
 
-# Encolar - agregar al final
-cola.append("Cliente 1")
-cola.append("Cliente 2")
-cola.append("Cliente 3")
-print("Cola:", cola)  # deque(['Cliente 1', 'Cliente 2', 'Cliente 3'])
+# Agregar o modificar un par
+estudiantes["Diana"] = 9.8  # Agrega nueva estudiante
+estudiantes["Luis"] = 7.5   # Modifica nota de Luis
 
-# Desencolar - atender al primero
-atendido = cola.popleft()  # Saca "Cliente 1"
-print("Atendido:", atendido)
-print("Cola después:", cola)  # deque(['Cliente 2', 'Cliente 3'])
+# Verificar si una clave existe
+if "Carlos" in estudiantes:
+    print("Carlos está en el curso")
 
-# Ver el primero sin quitarlo
-siguiente = cola[0]
-print("Próximo en atender:", siguiente)  # Cliente 2
+# Eliminar un par por su clave
+del estudiantes["Ana"]
 
-# Recorrer la cola
-for cliente in cola:
-    print(f"Esperando: {cliente}")
+# Recorrer claves y valores
+for nombre, nota in estudiantes.items():
+    print(f"{nombre} sacó {nota}")
+
+# Obtener solo las claves
+print(estudiantes.keys())   # dict_keys(['Luis', 'Carlos', 'Diana'])
+
+# Obtener solo los valores
+print(estudiantes.values()) # dict_values([7.5, 9.2, 9.8])
