@@ -1,19 +1,14 @@
-# PRINT: Muestra texto o variables en la consola
+# INPUT: Recibe texto ingresado por el usuario (siempre devuelve string)
 
-# Mostrar texto simple
-print("Hola mundo")
+# Entrada básica
+nombre = input("¿Cómo te llamas? ")
+print(f"Hola {nombre}")
 
-# Mostrar variables
-nombre = "Ana"
-edad = 25
-print(nombre, edad)  # Ana 25
+# Convertir a número (importante porque input devuelve texto)
+edad_texto = input("¿Cuántos años tienes? ")
+edad = int(edad_texto)  # Convertir a entero
+print(f"El año que viene tendrás {edad + 1} años")
 
-# Concatenar con f-strings (recomendado)
-print(f"Me llamo {nombre} y tengo {edad} años")
-
-# Personalizar separador (por defecto es espacio)
-print("uno", "dos", "tres", sep="-")  # uno-dos-tres
-
-# Personalizar final (por defecto es salto de línea)
-print("Hola", end=" ")
-print("mundo")  # Hola mundo (en la misma línea)
+# Versión compacta
+numero = int(input("Ingresa un número: "))
+print(f"El doble es {numero * 2}")
