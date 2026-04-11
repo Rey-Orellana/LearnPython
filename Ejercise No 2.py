@@ -1,14 +1,17 @@
-# INPUT: Recibe texto ingresado por el usuario (siempre devuelve string)
+# LEN: Devuelve la cantidad de elementos en una secuencia o colección
 
-# Entrada básica
-nombre = input("¿Cómo te llamas? ")
-print(f"Hola {nombre}")
+# Con strings (cuenta caracteres)
+texto = "Python"
+print(len(texto))  # 6
 
-# Convertir a número (importante porque input devuelve texto)
-edad_texto = input("¿Cuántos años tienes? ")
-edad = int(edad_texto)  # Convertir a entero
-print(f"El año que viene tendrás {edad + 1} años")
+# Con listas
+frutas = ["manzana", "pera", "uva"]
+print(len(frutas))  # 3
 
-# Versión compacta
-numero = int(input("Ingresa un número: "))
-print(f"El doble es {numero * 2}")
+# Con diccionarios
+alumnos = {"Ana": 8, "Luis": 7, "Carlos": 9}
+print(len(alumnos))  # 3
+
+# En condiciones (útil para validar)
+if len(frutas) > 0:
+    print("Hay frutas en la lista")
