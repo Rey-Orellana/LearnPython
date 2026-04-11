@@ -1,24 +1,25 @@
-#Estructuras de datos en python
-# LISTA: Colección ordenada y mutable que permite elementos duplicados
+# PILA: El último elemento que entra es el primero en salir
+# Ejemplo real: una pila de platos
 
-# Crear una lista de números
-numeros = [10, 20, 30, 40, 50]
+pila = []
 
-# Agregar un elemento al final
-numeros.append(60)  # [10, 20, 30, 40, 50, 60]
+# Apilar (push) - agregar elementos
+pila.append("Tarea 1")  # Primera tarea
+pila.append("Tarea 2")  # Segunda tarea
+pila.append("Tarea 3")  # Tercera tarea
+print("Pila:", pila)  # ['Tarea 1', 'Tarea 2', 'Tarea 3']
 
-# Insertar en una posición específica (índice 2, valor 25)
-numeros.insert(2, 25)  # [10, 20, 25, 30, 40, 50, 60]
+# Desapilar (pop) - quitar el último elemento agregado
+tarea_completada = pila.pop()  # Saca "Tarea 3"
+print("Completada:", tarea_completada)
+print("Pila después:", pila)  # ['Tarea 1', 'Tarea 2']
 
-# Acceder a un elemento por su índice (el primer elemento es índice 0)
-print(numeros[0])  # Muestra 10
+# Ver el último elemento sin quitarlo (peek)
+ultima = pila[-1]
+print("Última tarea pendiente:", ultima)  # Tarea 2
 
-# Eliminar un elemento por su valor
-numeros.remove(40)  # [10, 20, 25, 30, 50, 60]
-
-# Recorrer la lista con un bucle
-for num in numeros:
-    print(num, end=" ")  # Muestra: 10 20 25 30 50 60
-
-# Obtener el largo (cantidad de elementos)
-print("\nCantidad:", len(numeros))  # Muestra: 6
+# Verificar si está vacía
+if not pila:
+    print("No hay tareas")
+else:
+    print("Tareas pendientes:", len(pila))  # 2 tareas
