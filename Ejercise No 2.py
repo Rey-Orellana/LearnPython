@@ -1,17 +1,18 @@
-# LEN: Devuelve la cantidad de elementos en una secuencia o colección
+# TYPE: Devuelve el tipo de dato de una variable
 
-# Con strings (cuenta caracteres)
-texto = "Python"
-print(len(texto))  # 6
+# Tipos comunes
+nombre = "Juan"
+edad = 30
+altura = 1.75
+es_mayor = True
+colores = ["rojo", "verde"]
 
-# Con listas
-frutas = ["manzana", "pera", "uva"]
-print(len(frutas))  # 3
+print(type(nombre))   # <class 'str'>
+print(type(edad))     # <class 'int'>
+print(type(altura))   # <class 'float'>
+print(type(es_mayor)) # <class 'bool'>
+print(type(colores))  # <class 'list'>
 
-# Con diccionarios
-alumnos = {"Ana": 8, "Luis": 7, "Carlos": 9}
-print(len(alumnos))  # 3
-
-# En condiciones (útil para validar)
-if len(frutas) > 0:
-    print("Hay frutas en la lista")
+# Útil para depuración
+valor = input("Ingresa algo: ")
+print(f"El tipo de lo que ingresaste es: {type(valor)}")
