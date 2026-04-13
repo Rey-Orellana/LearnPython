@@ -1,5 +1,5 @@
 #Slicing
 
-b = "Hola, Mundo"
+listita = ["Choco","Chato","Pelado"]
 
-print(b[1:4])
+print(listita[0:2])
