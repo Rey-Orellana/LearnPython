@@ -1,8 +1,4 @@
-frase = "Hola, Mundo"
+txt = "Las mejores cosas de la vida son gratis"
 
-print(len(frase))
-
-segundaFrase = "Segunda Frasesita"
-
-for x in segundaFrase:
-    print(x)
+if "gratis" in txt:
+    print(f"Si, gratis esta en tu texto we {txt}")
