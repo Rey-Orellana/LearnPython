@@ -1,4 +1,8 @@
-l = ["Platano", "Manzana", "Uva", "Kiwi"]
+a = '''
+Primera linea
+Segunda linea
+Tercera linea
+Cuarta linea
+'''
 
-for fruta in l:
-    print(fruta)
+print(a)
