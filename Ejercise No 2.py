@@ -1,9 +1,5 @@
-txt = "Las mejores cosas de la vida son gratis"
+#Slicing
 
-print("caro" not in txt)
+b = "Hola, Mundo"
 
-
-
-lista = [1,2,3,4,5,6]
-
-print(7 not in lista)
+print(b[1:4])
