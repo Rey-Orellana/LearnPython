@@ -1,3 +1,3 @@
 import Saludo
 
-Saludo.imprimir()
+print(Saludo.sumita(5,5))

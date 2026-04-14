@@ -1,2 +1,2 @@
-def imprimir():
-    print("HOLA SOY UN MODULO")
+def sumita(a,b):
+    return a + b
