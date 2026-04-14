@@ -7,3 +7,5 @@ print(listita[0:6:2])
 tuplas = ("Enero","Febrero","Marzo","Abril")
 
 print(tuplas[0:2])
+
+print(len(tuplas))
