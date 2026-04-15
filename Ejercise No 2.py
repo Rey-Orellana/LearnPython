@@ -1,8 +1,5 @@
-def famOrellana(nombre = "Domingo"):
-    print(nombre + " Orellana")
+def mi_funcioncita(animal, nombre):
+    print("Tengo un: ", animal)
+    print("El nombre de mi ",animal," es: ", nombre)
 
-famOrellana()
-famOrellana("Reyna")
-famOrellana("Abigail")
-famOrellana("Rey")
-famOrellana("Gamaliel")
+mi_funcioncita("perro", "Max")
