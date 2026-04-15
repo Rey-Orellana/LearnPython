@@ -1,7 +1,5 @@
-day = 2
+i = 1
 
-match day:
-    case 1 | 2 | 3 | 4 | 5:
-        print("Today is a weekday")
-    case 6 | 7:
-        print("I love weekends")
+while i < 6:
+    print(i)
+    i+=1
