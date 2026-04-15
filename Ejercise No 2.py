@@ -1,3 +1,14 @@
-import Saludo
+day = 2
 
-print(f"Hoy es: {Saludo.datetime.datetime.now()}")
+match day:
+    case 1:
+        print("Lunes")
+    case 2:
+        print("Martes")
+    case 3:
+        print("Miercoles")
+    case 4:
+        print("Jueves")
+    case 5:
+        print("Viernes")
+
