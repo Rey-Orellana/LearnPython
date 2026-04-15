@@ -1,4 +1,8 @@
-def mi_funcion():
-    print("Hola soy una funcioncita")
+def famOrellana(nombre):
+    print(nombre + " Orellana")
 
-mi_funcion()
+
+famOrellana("Reyna")
+famOrellana("Abigail")
+famOrellana("Rey")
+famOrellana("Gamaliel")
