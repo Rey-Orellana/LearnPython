@@ -1,11 +1,12 @@
-class Pato:
-    def hablar(self): return "Quack!"
+class Empleado:
+    def __init__(self, nombre, sueldo):
+        self.nombre = nombre
+        self.sueldo = sueldo
 
-class Gato:
-    def hablar(self): return "Miau!"
+class Gerente(Empleado):
+    def __init__(self, nombre, sueldo, departamento):
+        super().__init__(nombre, sueldo) # Reutiliza el init del padre
+        self.departamento = departamento
 
-def hacer_hablar(animal):
-    print(animal.hablar())
-
-hacer_hablar(Pato())
-hacer_hablar(Gato())
+boss = Gerente("Ana", 5000, "Ventas")
+print(f"{boss.nombre} dirige {boss.departamento}")
