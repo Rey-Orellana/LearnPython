@@ -1,5 +1,5 @@
-def mi_funcioncita(animal, nombre):
-    print("Tengo un: ", animal)
-    print("El nombre de mi ",animal," es: ", nombre)
+class Mascota:
+    pass
 
-mi_funcioncita("perro", "Max")
+mi_perro = Mascota()
+print(type(mi_perro))
