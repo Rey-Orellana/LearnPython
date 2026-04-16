@@ -1,7 +1,12 @@
-class Robot:
-    def __init__(self, nombre, modelo):
-        self.nombre = nombre
-        self.modelo = modelo
+class Lampara:
+    def __init__(self):
+        self.encendida = False
 
-mi_robot = Robot("R2D2", "Astromecánico")
-print(f"Hola, soy {mi_robot.nombre}")
+    def interruptor(self):
+        self.encendida = not self.encendida
+        estado = "encendida" if self.encendida else "apagada"
+        print(f"La lámpara está {estado}")
+
+foco = Lampara()
+foco.interruptor()
+foco.interruptor()
