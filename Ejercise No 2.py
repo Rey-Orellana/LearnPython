@@ -1,11 +1,10 @@
-class Vehiculo:
-    def mensaje(self):
-        print("Este es un vehículo")
+class CuentaBancaria:
+    def __init__(self, saldo):
+        self.__saldo = saldo # Atributo privado
 
-class Coche(Vehiculo): # Hereda de Vehiculo
-    def tocar_bocina(self):
-        print("¡Beep beep!")
+    def ver_saldo(self):
+        return f"Saldo actual: ${self.__saldo}"
 
-mi_auto = Coche()
-mi_auto.mensaje()      # Método heredado
-mi_auto.tocar_bocina() # Método propio
+cuenta = CuentaBancaria(1000)
+print(cuenta.ver_saldo())
+# print(cuenta.__saldo)  # Esto daría error
