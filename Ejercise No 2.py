@@ -1,12 +1,11 @@
-class Lampara:
-    def __init__(self):
-        self.encendida = False
+class Vehiculo:
+    def mensaje(self):
+        print("Este es un vehículo")
 
-    def interruptor(self):
-        self.encendida = not self.encendida
-        estado = "encendida" if self.encendida else "apagada"
-        print(f"La lámpara está {estado}")
+class Coche(Vehiculo): # Hereda de Vehiculo
+    def tocar_bocina(self):
+        print("¡Beep beep!")
 
-foco = Lampara()
-foco.interruptor()
-foco.interruptor()
+mi_auto = Coche()
+mi_auto.mensaje()      # Método heredado
+mi_auto.tocar_bocina() # Método propio
