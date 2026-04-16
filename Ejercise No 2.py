@@ -1,10 +1,11 @@
-class CuentaBancaria:
-    def __init__(self, saldo):
-        self.__saldo = saldo # Atributo privado
+class Pato:
+    def hablar(self): return "Quack!"
 
-    def ver_saldo(self):
-        return f"Saldo actual: ${self.__saldo}"
+class Gato:
+    def hablar(self): return "Miau!"
 
-cuenta = CuentaBancaria(1000)
-print(cuenta.ver_saldo())
-# print(cuenta.__saldo)  # Esto daría error
+def hacer_hablar(animal):
+    print(animal.hablar())
+
+hacer_hablar(Pato())
+hacer_hablar(Gato())
