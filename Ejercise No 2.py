@@ -1,7 +1,6 @@
-import json
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
 
-estudiante = '{"Nombre":"Joaquin","Apellido":"Paco","Edad":35,"Estado":True}'
-
-primero = json.dumps(estudiante)
-
-print(primero)
+print(next(myit))
+print(next(myit))
+print(next(myit))
