@@ -1,5 +1,5 @@
 #Rangos en Python
-x = range(10)
+x = range(3,10)
 
 print(x)
 
