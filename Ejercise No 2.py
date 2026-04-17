@@ -1,6 +1,2 @@
-#Rangos en Python
-x = range(3,10)
-
-print(x)
-
-print(list(x))
+for i in range(11):
+    print(i)
