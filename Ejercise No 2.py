@@ -1,3 +1,7 @@
-r = range(10)
-print(r[2])
-print(r[:3])
+import json
+
+x = '{"name" : "Jhon","age" : 30,"city" : "New York"}'
+
+y = json.loads(x)
+
+print(y["age"])
