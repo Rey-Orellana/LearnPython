@@ -6,3 +6,9 @@ def miNombre(nombre):
 
 
 print(miNombre("Rey"))
+
+vairablePequena = "ORALE"
+
+minuscula = vairablePequena.lower()
+
+print(minuscula)
