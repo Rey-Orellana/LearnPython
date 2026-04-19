@@ -1,7 +1,7 @@
-import datetime
+#Listas en Python
 
-def sumita(a,b):
-    return a + b
+lista = {1,2,3}
 
-def fecha():
-    return datetime.datetime.now()
+lista.add(4)
+
+print(lista)
