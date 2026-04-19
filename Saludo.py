@@ -15,3 +15,7 @@ diccionarios = {"nombre":"Rey","Apellido":"Orellana","edad":27,"Sexo":"Masculibi
 
 print(diccionarios)
 print(type(diccionarios))
+
+#Aprendiendo algunas cosas
+
+print(diccionarios["nombre"])
