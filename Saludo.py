@@ -1,7 +1,8 @@
 #Listas en Python
 
 def miNombre(nombre):
-    print(f"Mi nombre es: {nombre}")
+    mayusculas =nombre.upper()
+    return mayusculas
 
 
-miNombre("Rey")
+print(miNombre("Rey"))
