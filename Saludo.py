@@ -1,15 +1,18 @@
-class Perro:
-    def hablar(self):
-        return "¡Guau!"
+class Pastel:
+    def __init__(self, ingredientes):
+        self.ingredientes = ingredientes
 
-class Gato:
-    def hablar(self):
-        return "¡Miau!"
+    @classmethod
+    def pastel_chocolate(cls):
+        return cls(['harina', 'leche', 'chocolate'])
 
-def hacer_ruido(animal):
-    print(animal.hablar())
+    @staticmethod
+    def es_apto_para_diabeticos(ingredientes):
+        return 'azúcar' not in ingredientes
 
-mascotas = [Perro(), Gato()]
+# Usando el método de clase para crear un objeto predefinido
+mi_pastel = Pastel.pastel_chocolate()
+print(mi_pastel.ingredientes)
 
-for mascota in mascotas:
-    hacer_ruido(mascota)
+# Usando el método estático sin crear una instancia
+print(Pastel.es_apto_para_diabeticos(['harina', 'stevia']))
