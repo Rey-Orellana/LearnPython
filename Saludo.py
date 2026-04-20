@@ -1,26 +1,16 @@
-class Vehiculo:
-    # El método __init__ es el constructor
-    def __init__(self, marca, modelo):
-        self.marca = marca    # Atributo de instancia
-        self.modelo = modelo  # Atributo de instancia
+class CuentaBancaria:
+    def __init__(self, saldo_inicial):
+        self.__saldo = saldo_inicial  # Atributo privado
 
-    # Un método para definir un comportamiento
-    def describir(self):
-        return f"Este es un {self.marca} modelo {self.modelo}."
+    def depositar(self, monto):
+        if monto > 0:
+            self.__saldo += monto
+            print(f"Depósito exitoso. Nuevo saldo: {self.__saldo}")
 
-# Crear un objeto (instancia de la clase)
-mi_auto = Vehiculo("Toyota", "Corolla")
-print(mi_auto.describir())
+    def obtener_saldo(self):
+        return f"Saldo actual: {self.__saldo}"
 
-
-class CocheElectrico(Vehiculo): # Hereda de Vehiculo
-    def __init__(self, marca, modelo, bateria):
-        super().__init__(marca, modelo) # Llama al constructor del padre
-        self.bateria = bateria
-
-    def mostrar_bateria(self):
-        return f"Batería al {self.bateria}%."
-
-teslita = CocheElectrico("Tesla", "Model 3", 90)
-print(teslita.describir())
-print(teslita.mostrar_bateria())
+cuenta = CuentaBancaria(1000)
+cuenta.depositar(500)
+# print(cuenta.__saldo)  # Esto lanzaría un error de atributo
+print(cuenta.obtener_saldo())
