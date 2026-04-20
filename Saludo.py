@@ -1,19 +1,20 @@
-from abc import ABC, abstractmethod
+class Motor:
+    def __init__(self, tipo):
+        self.tipo = tipo
 
-class Documento(ABC):
-    @abstractmethod
-    def exportar(self):
-        """Este método debe ser implementado por cualquier clase hija"""
-        pass
+    def encender(self):
+        return f"Motor {self.tipo} rugiendo..."
 
-class PDF(Documento):
-    def exportar(self):
-        return "Exportando contenido a formato PDF..."
+class Auto:
+    def __init__(self, marca, motor):
+        self.marca = marca
+        self.motor = motor  # El auto "tiene un" motor (Composición)
 
-class Word(Documento):
-    def exportar(self):
-        return "Guardando como archivo .docx..."
+    def arrancar(self):
+        return f"{self.marca}: {self.motor.encender()}"
 
-# No puedes hacer: doc = Documento() -> Lanzará un error
-archivo = PDF()
-print(archivo.exportar())
+# Creamos las piezas por separado
+mi_motor = Motor("V8")
+mi_nave = Auto("Ford", mi_motor)
+
+print(mi_nave.arrancar())
