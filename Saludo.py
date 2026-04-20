@@ -1,19 +1,19 @@
-class Empleado:
-    def __init__(self, nombre, sueldo):
-        self.nombre = nombre
-        self.__sueldo = sueldo
+from abc import ABC, abstractmethod
 
-    @property
-    def sueldo(self):
-        return f"$ {self.__sueldo}"
+class Documento(ABC):
+    @abstractmethod
+    def exportar(self):
+        """Este método debe ser implementado por cualquier clase hija"""
+        pass
 
-    @sueldo.setter
-    def sueldo(self, nuevo_sueldo):
-        if nuevo_sueldo > 0:
-            self.__sueldo = nuevo_sueldo
-        else:
-            print("Error: El sueldo debe ser positivo.")
+class PDF(Documento):
+    def exportar(self):
+        return "Exportando contenido a formato PDF..."
 
-emp = Empleado("Luis", 2000)
-print(emp.sueldo)   # Se accede como atributo, no como función emp.sueldo()
-emp.sueldo = 2500   # Se usa el setter para validar
+class Word(Documento):
+    def exportar(self):
+        return "Guardando como archivo .docx..."
+
+# No puedes hacer: doc = Documento() -> Lanzará un error
+archivo = PDF()
+print(archivo.exportar())
