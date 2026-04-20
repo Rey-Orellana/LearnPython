@@ -1,18 +1,19 @@
-class Pastel:
-    def __init__(self, ingredientes):
-        self.ingredientes = ingredientes
+class Empleado:
+    def __init__(self, nombre, sueldo):
+        self.nombre = nombre
+        self.__sueldo = sueldo
 
-    @classmethod
-    def pastel_chocolate(cls):
-        return cls(['harina', 'leche', 'chocolate'])
+    @property
+    def sueldo(self):
+        return f"$ {self.__sueldo}"
 
-    @staticmethod
-    def es_apto_para_diabeticos(ingredientes):
-        return 'azúcar' not in ingredientes
+    @sueldo.setter
+    def sueldo(self, nuevo_sueldo):
+        if nuevo_sueldo > 0:
+            self.__sueldo = nuevo_sueldo
+        else:
+            print("Error: El sueldo debe ser positivo.")
 
-# Usando el método de clase para crear un objeto predefinido
-mi_pastel = Pastel.pastel_chocolate()
-print(mi_pastel.ingredientes)
-
-# Usando el método estático sin crear una instancia
-print(Pastel.es_apto_para_diabeticos(['harina', 'stevia']))
+emp = Empleado("Luis", 2000)
+print(emp.sueldo)   # Se accede como atributo, no como función emp.sueldo()
+emp.sueldo = 2500   # Se usa el setter para validar
