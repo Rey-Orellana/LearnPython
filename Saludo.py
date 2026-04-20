@@ -1,16 +1,15 @@
-class CuentaBancaria:
-    def __init__(self, saldo_inicial):
-        self.__saldo = saldo_inicial  # Atributo privado
+class Perro:
+    def hablar(self):
+        return "¡Guau!"
 
-    def depositar(self, monto):
-        if monto > 0:
-            self.__saldo += monto
-            print(f"Depósito exitoso. Nuevo saldo: {self.__saldo}")
+class Gato:
+    def hablar(self):
+        return "¡Miau!"
 
-    def obtener_saldo(self):
-        return f"Saldo actual: {self.__saldo}"
+def hacer_ruido(animal):
+    print(animal.hablar())
 
-cuenta = CuentaBancaria(1000)
-cuenta.depositar(500)
-# print(cuenta.__saldo)  # Esto lanzaría un error de atributo
-print(cuenta.obtener_saldo())
+mascotas = [Perro(), Gato()]
+
+for mascota in mascotas:
+    hacer_ruido(mascota)
