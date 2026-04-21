@@ -1,14 +1,14 @@
-class Robot:
-    total_robots = 0  # Atributo de clase
+class Motor:
+    def encender(self):
+        return "Motor haciendo Brum Brum!"
 
-    def __init__(self, nombre):
-        self.nombre = nombre
-        Robot.total_robots += 1  # Cada que nace uno, sumamos
+class Coche:
+    def __init__(self, marca):
+        self.marca = marca
+        self.motor = Motor()  # El coche TIENE un motor
 
-    @classmethod
-    def imprimir_poblacion(cls):
-        print(f"Hay {cls.total_robots} robots en el mundo.")
+    def arrancar(self):
+        print(f"El {self.marca} dice: {self.motor.encender()}")
 
-r1 = Robot("R2D2")
-r2 = Robot("C3PO")
-Robot.imprimir_poblacion()  # Salida: Hay 2 robots en el mundo.
+mi_nave = Coche("Toyota")
+mi_nave.arrancar()
