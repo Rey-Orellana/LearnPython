@@ -1,9 +1,11 @@
-class Celular:
-    def __init__(self, marca):
-        self.marca = marca
+class Animal:
+    def respirar(self):
+        print("Inhalando y exhalando...")
 
-    def llamar(self):
-        print(f"Llamando desde mi {self.marca}...")
+class Pez(Animal): # Pez hereda de Animal
+    def nadar(self):
+        print("Glup glup, estoy nadando")
 
-mi_cel = Celular("iPhone")
-mi_cel.llamar()
+nemo = Pez()
+nemo.respirar() # ¡Puede respirar porque es un animal!
+nemo.nadar()
