@@ -1,10 +1,12 @@
-class CuentaBancaria:
-    def __init__(self, saldo):
-        self.__saldo = saldo # Atributo privado
+class Personaje:
+    def __init__(self, nombre, fuerza):
+        self.nombre = nombre
+        self.fuerza = fuerza
 
-    def ver_saldo(self):
-        return f"Tu saldo es ${self.__saldo}"
+    def atacar(self, enemigo):
+        print(f"{self.nombre} ataca a {enemigo} con {self.fuerza} de daño")
 
-cuenta = CuentaBancaria(1000)
-print(cuenta.ver_saldo())
-# print(cuenta.__saldo) # Esto daría error
+heroe = Personaje("Arturo", 50)
+villano = Personaje("Dr. Mal", 30)
+
+heroe.atacar(villano.nombre)
