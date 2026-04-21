@@ -1,12 +1,14 @@
-class Personaje:
-    def __init__(self, nombre, fuerza):
+class Robot:
+    total_robots = 0  # Atributo de clase
+
+    def __init__(self, nombre):
         self.nombre = nombre
-        self.fuerza = fuerza
+        Robot.total_robots += 1  # Cada que nace uno, sumamos
 
-    def atacar(self, enemigo):
-        print(f"{self.nombre} ataca a {enemigo} con {self.fuerza} de daño")
+    @classmethod
+    def imprimir_poblacion(cls):
+        print(f"Hay {cls.total_robots} robots en el mundo.")
 
-heroe = Personaje("Arturo", 50)
-villano = Personaje("Dr. Mal", 30)
-
-heroe.atacar(villano.nombre)
+r1 = Robot("R2D2")
+r2 = Robot("C3PO")
+Robot.imprimir_poblacion()  # Salida: Hay 2 robots en el mundo.
