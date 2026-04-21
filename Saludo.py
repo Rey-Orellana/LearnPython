@@ -1,7 +1,9 @@
-class Gato:
-    def __init__(self, nombre, color):
-        self.nombre = nombre  # Atributo
-        self.color = color    # Atributo
+class Celular:
+    def __init__(self, marca):
+        self.marca = marca
 
-michi = Gato("Felix", "Naranja")
-print(f"Mi gato se llama {michi.nombre} y es de color {michi.color}")
+    def llamar(self):
+        print(f"Llamando desde mi {self.marca}...")
+
+mi_cel = Celular("iPhone")
+mi_cel.llamar()
