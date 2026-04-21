@@ -1,11 +1,10 @@
-class Animal:
-    def respirar(self):
-        print("Inhalando y exhalando...")
+class CuentaBancaria:
+    def __init__(self, saldo):
+        self.__saldo = saldo # Atributo privado
 
-class Pez(Animal): # Pez hereda de Animal
-    def nadar(self):
-        print("Glup glup, estoy nadando")
+    def ver_saldo(self):
+        return f"Tu saldo es ${self.__saldo}"
 
-nemo = Pez()
-nemo.respirar() # ¡Puede respirar porque es un animal!
-nemo.nadar()
+cuenta = CuentaBancaria(1000)
+print(cuenta.ver_saldo())
+# print(cuenta.__saldo) # Esto daría error
