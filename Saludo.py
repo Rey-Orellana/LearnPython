@@ -1,14 +1,10 @@
-class Motor:
-    def encender(self):
-        return "Motor haciendo Brum Brum!"
+class Libro:
+    def __init__(self, titulo, autor):
+        self.titulo = titulo
+        self.autor = autor
 
-class Coche:
-    def __init__(self, marca):
-        self.marca = marca
-        self.motor = Motor()  # El coche TIENE un motor
+    def __str__(self):
+        return f"'{self.titulo}' escrito por {self.autor}"
 
-    def arrancar(self):
-        print(f"El {self.marca} dice: {self.motor.encender()}")
-
-mi_nave = Coche("Toyota")
-mi_nave.arrancar()
+mi_libro = Libro("El Quijote", "Cervantes")
+print(mi_libro)  # Salida: 'El Quijote' escrito por Cervantes
