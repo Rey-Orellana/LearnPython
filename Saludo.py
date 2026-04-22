@@ -1,12 +1,9 @@
-class perro:
-    def __init__(self,nombre,raza):
-        self.nombre=nombre
-        self.raza=raza
-    
-    def mostrar(self):
-        print(f"Mi perro se llama {self.nombre} y es de raza {self.raza}")
+#Usando Json en Python
 
+import json
 
-mi_perro = perro("Goofy","San Bernardo")
+x = {"nombre":"Mario","edad":30,"Ciudad":"Belin"}
 
-mi_perro.mostrar()
+y = json.loads(x)
+
+print(y["edad"])
