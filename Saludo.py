@@ -1,10 +1,12 @@
-class Libro:
-    def __init__(self, titulo, autor):
-        self.titulo = titulo
-        self.autor = autor
+class perro:
+    def __init__(self,nombre,raza):
+        self.nombre=nombre
+        self.raza=raza
+    
+    def mostrar(self):
+        print(f"Mi perro se llama {self.nombre} y es de raza {self.raza}")
 
-    def __str__(self):
-        return f"'{self.titulo}' escrito por {self.autor}"
 
-mi_libro = Libro("El Quijote", "Cervantes")
-print(mi_libro)  # Salida: 'El Quijote' escrito por Cervantes
+mi_perro = perro("Goofy","San Bernardo")
+
+mi_perro.mostrar()
