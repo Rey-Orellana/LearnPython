@@ -1,9 +1,5 @@
-class Person:
-  def __init__(self, name, age):
-    self.name = name
-    self.__age = age
+import numpy
 
-p1 = Person("Emil", 30)
+x = numpy.random.uniform(0.0, 5.0, 250)
 
-# This is how Python mangles the name:
-print(p1._Person__age)  # Not recommended!
+print(x)
