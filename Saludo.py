@@ -1,24 +1,20 @@
-class Student:
-  def __init__(self, name):
-    self.name = name
-    self.__grade = 0
+class Calculator:
+  def __init__(self):
+    self.result = 0
 
-  def set_grade(self, grade):
-    if 0 <= grade <= 100:
-      self.__grade = grade
+  def __validate(self, num):
+    if not isinstance(num, (int, float)):
+      return False
+    return True
+
+  def add(self, num):
+    if self.__validate(num):
+      self.result += num
     else:
-      print("Grade must be between 0 and 100")
+      print("Invalid number")
 
-  def get_grade(self):
-    return self.__grade
-
-  def get_status(self):
-    if self.__grade >= 60:
-      return "Passed"
-    else:
-      return "Failed"
-
-student = Student("Emil")
-student.set_grade(85)
-print(student.get_grade())
-print(student.get_status())
+calc = Calculator()
+calc.add(10)
+calc.add(5)
+print(calc.result)
+# calc.__validate(5)  # This would cause an error
