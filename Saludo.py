@@ -1,9 +1,3 @@
-#Usando Json en Python
+x = "Hello World!"
 
-import json
-
-x = {"nombre":"Mario","edad":30,"Ciudad":"Belin"}
-
-y = json.loads(x)
-
-print(y["edad"])
+print(len(x))
