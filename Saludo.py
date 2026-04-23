@@ -1,3 +1,3 @@
-mi_array = [5, 10, 15, 20]
-print("Primer elemento:", mi_array[0])
-print("Último elemento:", mi_array[-1])
+numeros = [1, 2, 4]
+numeros.insert(2, 3)  # posición 2, valor 3
+print(numeros)  # [1, 2, 3, 4]
