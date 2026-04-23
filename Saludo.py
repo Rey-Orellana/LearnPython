@@ -1,3 +1,5 @@
-temperaturas = [22, 24, 20, 25]
-for temp in temperaturas:
-    print("Temperatura:", temp)
+notas = [8, 7, 9, 10, 6]
+suma = 0
+for nota in notas:
+    suma += nota
+print("Suma total:", suma)
