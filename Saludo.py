@@ -1,2 +1,3 @@
-mi_array = [10, 20, 30, 40, 50]
-print(mi_array)
+mi_array = [5, 10, 15, 20]
+print("Primer elemento:", mi_array[0])
+print("Último elemento:", mi_array[-1])
