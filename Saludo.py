@@ -1,4 +1,3 @@
-letras = ['a', 'b', 'c', 'd']
-eliminada = letras.pop(2)  # elimina índice 2 ('c')
-print(letras)      # ['a', 'b', 'd']
-print(eliminada)   # c
+temperaturas = [22, 24, 20, 25]
+for temp in temperaturas:
+    print("Temperatura:", temp)
