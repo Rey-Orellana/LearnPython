@@ -1,3 +1,4 @@
-tareas = ["Cita BLS", "Apostillar", "Seguro Médico"]
-for i, tarea in enumerate(tareas, 1):
-    print(f"Paso {i}: {tarea}")
+cola_tramites = ["Pago tasas", "Huellas", "Entrega"]
+while cola_tramites:
+    actual = cola_tramites.pop(0)
+    print(f"Procesando: {actual}...")
