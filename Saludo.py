@@ -1,3 +1,3 @@
-precios_bob = [100, 250, 500]
-precios_con_iva = [p * 1.13 for p in precios_bob]
-print(precios_con_iva)
+notas = {"Derecho": 90, "Sistemas": 95, "Inglés": 60}
+aprobados = {k: v for k, v in notas.items() if v >= 70}
+print(f"Materias aprobadas: {aprobados}")
