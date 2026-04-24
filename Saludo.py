@@ -1,2 +1,5 @@
-for i in range(5):
-    print(f"Intento de conexión #{i+1}")
+nombres = ["Juan", "Maria"]
+cargos = ["Abogado", "Ingeniera"]
+
+for nombre, cargo in zip(nombres, cargos):
+    print(f"{nombre} trabaja como {cargo}")
