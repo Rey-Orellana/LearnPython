@@ -1,5 +1,6 @@
-nombres = ["Juan", "Maria"]
-cargos = ["Abogado", "Ingeniera"]
+list = ["python","java","sql"]
 
-for nombre, cargo in zip(nombres, cargos):
-    print(f"{nombre} trabaja como {cargo}")
+for "JAVA" in list:
+    print("Existe")
+else:
+    print("NO PAPU")
