@@ -1,6 +1,3 @@
-list = ["python","java","sql"]
-
-for "JAVA" in list:
-    print("Existe")
-else:
-    print("NO PAPU")
+# 1. Vector con lista simple
+vector1 = [1, 2, 3, 4]
+print("Vector:", vector1)  # [1, 2, 3, 4]
