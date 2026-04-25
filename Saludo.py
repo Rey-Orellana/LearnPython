@@ -1,4 +1,3 @@
-# 5. Acceder y modificar elementos
-print("Elemento en índice 1:", vector2[1])  # 2
-vector2[1] = 10
-print("Vector modificado:", vector2)  # [1 10 3 4]
+# 6. Rebanado (slicing)
+subvector = vector2[1:4]
+print("Subvector:", subvector)  # [10 3 4]
