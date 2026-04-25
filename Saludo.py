@@ -1,4 +1,4 @@
-# 4. Multiplicación por escalar
-escalar = 2
-producto = escalar * v1
-print("Escalar * vector:", producto)  # [2 4 6]
+# 5. Acceder y modificar elementos
+print("Elemento en índice 1:", vector2[1])  # 2
+vector2[1] = 10
+print("Vector modificado:", vector2)  # [1 10 3 4]
