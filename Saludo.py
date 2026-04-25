@@ -1,3 +1,3 @@
-# 6. Rebanado (slicing)
-subvector = vector2[1:4]
-print("Subvector:", subvector)  # [10 3 4]
+# 7. Producto punto
+punto = np.dot(v1, v2)
+print("Producto punto:", punto)  # 32
