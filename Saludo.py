@@ -1,3 +1,3 @@
-colores_rgb = (255, 0, 128)
-for componente in colores_rgb:
-    print(f"Valor de canal: {componente}")
+capitales = {"Bolivia": "Sucre", "México": "CDMX", "España": "Madrid"}
+for pais, capital in capitales.items():
+    print(f"La capital de {pais} es {capital}")
