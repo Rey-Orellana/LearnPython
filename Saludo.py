@@ -1,6 +1,3 @@
-edades = [12, 25, 18, 40, 15, 30]
-mayores = []
-for edad in edades:
-    if edad >= 18:
-        mayores.append(edad)
-print(f"Usuarios mayores de edad: {mayores}")
+tareas = ["Lavar ropa", "Estudiar Python", "Ir al gym"]
+for i, tarea in enumerate(tareas, start=1):
+    print(f"{i}. {tarea}")
