@@ -1,5 +1,3 @@
-numeros = [10, 20, 30, 40, 50]
-suma = 0
-for n in numeros:
-    suma += n
-print(f"La suma total es: {suma}")
+colores_rgb = (255, 0, 128)
+for componente in colores_rgb:
+    print(f"Valor de canal: {componente}")
