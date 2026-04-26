@@ -1,3 +1,3 @@
-# 7. Producto punto
-punto = np.dot(v1, v2)
-print("Producto punto:", punto)  # 32
+frutas = ["manzana", "banana", "cereza"]
+for fruta in frutas:
+    print(f"Me gusta la {fruta}")
