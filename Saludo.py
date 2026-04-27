@@ -1,16 +1,11 @@
-class StringFormatter:
+class StringReplacer:
     def __init__(self, text: str):
         self.text = text
 
-    def to_upper(self) -> str:
-        return self.text.upper()
-
-    def to_lower(self) -> str:
-        return self.text.lower()
-
-    def to_title(self) -> str:
-        return self.text.title()
+    def replace_word(self, old: str, new: str) -> str:
+        return self.text.replace(old, new)
 
 # Ejemplo
-formatter = StringFormatter("el lenguaje PYTHON es GENIAL")
-print(formatter.to_title())  # El Lenguaje Python Es Genial
+replacer = StringReplacer("Me gusta Java")
+nuevo_texto = replacer.replace_word("Java", "Python")
+print(nuevo_texto)  # Me gusta Python
