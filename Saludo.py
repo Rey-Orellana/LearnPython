@@ -1,11 +1,14 @@
-class WordCounter:
-    def __init__(self, text: str):
-        self.text = text
+class EmailValidator:
+    def __init__(self, email: str):
+        self.email = email
 
-    def count_words(self) -> int:
-        """Cuenta palabras separadas por espacios."""
-        return len(self.text.split())
+    def is_valid(self) -> bool:
+        """Validación simple: contiene '@' y un punto después de '@'."""
+        if "@" not in self.email:
+            return False
+        local, domain = self.email.split("@")
+        return len(local) > 0 and "." in domain and len(domain.split(".")[-1]) >= 2
 
 # Ejemplo
-counter = WordCounter("Aprender Python con POO es divertido")
-print(counter.count_words())  # 6
+validator = EmailValidator("usuario@example.com")
+print(validator.is_valid())  # True
