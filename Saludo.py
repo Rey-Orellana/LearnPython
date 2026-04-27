@@ -1,3 +1,11 @@
-productos = [("Laptop", 800), ("Mouse", 25), ("Teclado", 50)]
-for nombre, precio in productos:
-    print(f"Producto: {nombre} | Precio: ${precio}")
+class StringReverser:
+    def __init__(self, text: str):
+        self.text = text
+
+    def reverse(self) -> str:
+        """Devuelve la cadena invertida."""
+        return self.text[::-1]
+
+# Ejemplo
+reverser = StringReverser("Python")
+print(reverser.reverse())  # nohtyP
