@@ -1,12 +1,14 @@
-class PalindromeChecker:
+class VowelConsonantCounter:
     def __init__(self, text: str):
-        self.text = text
+        self.text = text.lower()
 
-    def is_palindrome(self) -> bool:
-        """Verifica si la cadena es un palíndromo (ignora espacios y mayúsculas)."""
-        cleaned = self.text.replace(" ", "").lower()
-        return cleaned == cleaned[::-1]
+    def count(self):
+        vowels = "aeiou"
+        num_vowels = sum(1 for ch in self.text if ch in vowels)
+        num_consonants = sum(1 for ch in self.text if ch.isalpha() and ch not in vowels)
+        return num_vowels, num_consonants
 
 # Ejemplo
-checker = PalindromeChecker("Anita lava la tina")
-print(checker.is_palindrome())  # True
+counter = VowelConsonantCounter("Hola Mundo")
+voc, cons = counter.count()
+print(f"Vocales: {voc}, Consonantes: {cons}")  # Vocales: 4, Consonantes: 5
