@@ -1,6 +1,6 @@
 import json
 
-data = {"id": 1, "items": ["manzana", "pera"], "activo": True}
-pretty_json = json.dumps(data, indent=4)
+data = {"z": 1, "a": 2, "m": 3}
+ordered_json = json.dumps(data, indent=4, sort_keys=True)
 
-print(pretty_json)
+print(ordered_json)
