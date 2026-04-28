@@ -1,6 +1,5 @@
 import json
 
-data = {"z": 1, "a": 2, "m": 3}
-ordered_json = json.dumps(data, indent=4, sort_keys=True)
-
-print(ordered_json)
+data = {"mensaje": "HOLA, ¡niño!"}
+# Sin False, verás códigos como \u00f1
+print(json.dumps(data, ensure_ascii=False))
