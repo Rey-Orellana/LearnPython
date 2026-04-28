@@ -1,11 +1,6 @@
-class StringTrimmer:
-    def __init__(self, text: str):
-        self.text = text
+import json
 
-    def clean(self) -> str:
-        """Elimina espacios al inicio/final y reduce múltiples espacios internos."""
-        return " ".join(self.text.split())
+data = {"nombre": "Alex", "edad": 25, "ciudad": "Madrid"}
+json_string = json.dumps(data)
 
-# Ejemplo
-trimmer = StringTrimmer("   Python   es   genial   ")
-print(trimmer.clean())  # "Python es genial"
+print(json_string)
