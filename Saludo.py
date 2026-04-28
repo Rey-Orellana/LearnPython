@@ -1,6 +1,6 @@
 import json
 
-json_data = '{"nombre": "Alex", "edad": 25, "ciudad": "Madrid"}'
-data = json.loads(json_data)
+data = {"usuario": "admin", "puntos": 1500}
 
-print(data["nombre"])  # Salida: Alex
+with open("datos.json", "w") as file:
+    json.dump(data, file)
